@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function()
+        {
+            $("#r1d").hide();
+            $("#r2d").hide();
+            $("#r3d").hide();
+            $('input[id="r1"]').click(function()
+            {
+                $("#r1d").show();
+                $("#r2d").hide();
+                $("#r3d").hide();
+                $("#r1").addClass("active");
+                $("#r2").removeClass("active");
+                $("#r3").removeClass("active");
+            });
+            $('input[id="r2"]').click(function()
+            {
+                $("#r2d").show();
+                $("#r1d").hide();
+                $("#r3d").hide();
+                $("#r2").addClass("active");
+                $("#r1").removeClass("active");
+                $("#r3").removeClass("active");
+            });
+            $('input[id="r3"]').click(function()
+            {
+                $("#r3d").show();
+                $("#r1d").hide();
+                $("#r2d").hide();
+                $("#r3").addClass("active");
+                $("#r1").removeClass("active");
+                $("#r2").removeClass("active");
+            });
+        });
+    </script>
+</head>
+<body>
+	<div id="main-wrapper">
+		<!-------------------------------------------------------------->
+		<!-- Start of Body-->
+		<!-------------------------------------------------------------->
+		<div class="row">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
+				<div class="card card-color mg-u-20">
+					<div class="row mg-0">
+						<div class="col-lg-4 card-image">
+							<img src="images/target_audience.jpg" alt="Target Audience" class="img-responsive">
+						</div>
+						<div class="col-lg-4 card-image">
+							<img src="images/website_functionality.png" alt="Website Functionality" class="img-responsive">
+						</div>
+						<div class="col-lg-4 card-image">
+							<img src="images/new_feature.jpg" alt="New Features" class="img-responsive">
+						</div>
+					</div>
+					<div class="card-title mg-u-0">
+						<h3>Mission Statement</h3>
+					</div>
+					<span class="pd-d-30">
+						<p>
+							Mypassionsoccer.com is an online platform where the user can get updated with the scores, tables and all the other things going on in the English premier league. Although I would love to make this a general platform for every major league that is there this one is specifically dedicated to one of the top leagues in the world EPL. I have selected EPL because it is one of the most followed leagues in the world where some of the world's best teams compete for the title claim. EPL, is very well renowned from the beginning itself, attracting many stars in soccer. 
+						</p>
+						<p>
+							This site mainly focused on but is not limited to the person who follows or wants to follow what is going on in EPL. This gives him/her a platform to get updates about the recent activities. Mypassionsoccer.com gives a basic overview of what is the current situation of the league and the clubs in it. 
+						</p>
+						<p>
+							Although EPL has its own site premierleague.com where one can find most of this information. And since this is an official site for the league it can be trusted as well (Most of this site’s data gets updated there), but mypassionsoccer.com differs from this site as we also discuss the basics of soccer with the latest rules that are introduced, explained in a very friendly manner. And since I’m learning machine learning, some predictions are happening for the games. Apart from all that, there is also a community page where one can get involved in a community of a club or maybe of any player.
+						</p>
+						<p>
+							Combining the basic info about rules in soccer with the current situation of the league and with a pinch of machine learning providing some predictions, mypassionsoccer.com provides a complete platform for anyone new who wants to follow this beautiful sport.
+						</p>
+					</span>
+					<div class="row mg-0">
+						<div class="col-lg-4 text-center">
+							<input type="button" class="btn btn-success btn-lg btn-block" id="r1" value="Who is this site for">
+						</div>
+						<div class="col-lg-4 text-center">
+							<input type="button" class="but btn-success btn-lg btn-block" id="r2" value="What does this site do">
+						</div>
+						<div class="col-lg-4 text-center">
+							<input type="button" class="but btn-success btn-lg btn-block" id="r3" value="How does it differs">
+						</div>
+					</div>
+					<div class="row pd-u-10">
+						<div class="col-lg-1"></div>
+						<div class="col-lg-10" id="r1d">
+							<span>
+								Cricket, the gentleman's game, as a professional sport has been around for over 200 years. Though the initial roots of the game are not known, it was played over 400 years in England where it is believed to have originated. Cricket is now played across multiple formats and is a truly global sport. However, due to the colonial roots and the complexity in both its rules and equipment, it has not been as popular as other sports like Soccer or Basketball. Over the past 10 years, new countries and a lot of people are learning about cricket, especially due to the migration of cricket fans to these countries.  The most popular cricket websites ESPNCricInfo and CricBuzz cater to an experienced fan or to someone who understands cricket well. The homepages of both the websites run stories and live scores which are targeted at drawing attention and updating an existing follower of cricket. For someone who is new to cricket or wants to learn about the game, these websites can be intimidating. Cricopedia is an online encyclopedia, which intends to fill this gap. It would have comprehensive details about cricket including the playing conditions, facets of the game, different formats, basic rules, pieces of equipment, a brief list of records and iconic players.
+							</span>
+						</div>
+						<div class="col-lg-10" id="r2d">
+							<span>
+								Cricket, the gentleman's game, as a professional sport has been around for over 200 years. Though the initial roots of the game are not known, it was played over 400 years in England where it is believed to have originated. Cricket is now played across multiple formats and is a truly global sport. However, due to the colonial roots and the complexity in both its rules and equipment, it has not been as popular as other sports like Soccer or Basketball. Over the past 10 years, new countries and a lot of people are learning about cricket, especially due to the migration of cricket fans to these countries.  The most popular cricket websites ESPNCricInfo and CricBuzz cater to an experienced fan or to someone who understands cricket well. The homepages of both the websites run stories and live scores which are targeted at drawing attention and updating an existing follower of cricket. For someone who is new to cricket or wants to learn about the game, these websites can be intimidating. Cricopedia is an online encyclopedia, which intends to fill this gap. It would have comprehensive details about cricket including the playing conditions, facets of the game, different formats, basic rules, pieces of equipment, a brief list of records and iconic players.
+							</span>
+						</div>
+						<div class="col-lg-10" id="r3d">
+							<span>
+								Cricket, the gentleman's game, as a professional sport has been around for over 200 years. Though the initial roots of the game are not known, it was played over 400 years in England where it is believed to have originated. Cricket is now played across multiple formats and is a truly global sport. However, due to the colonial roots and the complexity in both its rules and equipment, it has not been as popular as other sports like Soccer or Basketball. Over the past 10 years, new countries and a lot of people are learning about cricket, especially due to the migration of cricket fans to these countries.  The most popular cricket websites ESPNCricInfo and CricBuzz cater to an experienced fan or to someone who understands cricket well. The homepages of both the websites run stories and live scores which are targeted at drawing attention and updating an existing follower of cricket. For someone who is new to cricket or wants to learn about the game, these websites can be intimidating. Cricopedia is an online encyclopedia, which intends to fill this gap. It would have comprehensive details about cricket including the playing conditions, facets of the game, different formats, basic rules, pieces of equipment, a brief list of records and iconic players.
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------------------------------------------->
+		<!-- End of Body -->
+		<!-------------------------------------------------------------->
+	</div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shop Merchandise</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/WebAssignmentCss.css">
+	<!-- Jquery Link -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/maphilight/1.4.0/jquery.maphilight.min.js"></script>
+	<!-- Custom JavaScript -->
+	<script src="js/shopJavascript.js"></script>
+</head>
+<body>
+	<div id="main-wrapper">
+		<!-------------------------------------------------------------->
+		<!-- Start of Header -->
+		<!-------------------------------------------------------------->
+		<header class="topbar">
+			<nav class="navbar navbar-expand-lg">
+				<!-- Logo For the Website -->
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						<img src="images/Premier_League-Logo.png" alt="Premier League Logo" class="logo">
+					</a>
+				</div>
+				<!-- Header Options i.e. Top Menu Bar -->
+  				<div class="mg-l-30" id="headerBar">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="aboutMe.html">About Me</a></li>
+						<li class="nav-item"><a class="nav-link" href="missionStatement.html">Mission Statement</a></li>
+						<li class="nav-item"><a class="nav-link" href="table.html">Table</a></li>
+						<li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+						<li class="nav-item"><a class="nav-link active" href="shop.html">Shop</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-------------------------------------------------------------->
+		<!-- End of Header -->
+		<!-------------------------------------------------------------->
+		<!-------------------------------------------------------------->
+		<!-- Start of Body-->
+		<!-------------------------------------------------------------->
+		<div class="container-fluid">
+			<div class="row">
+				<!-- This is the left block showing an image map about the merchandice -->
+				<div class="col-lg-8 offset-lg-1 col-md-9">
+					<div id="clubDescription" class="card card-color mg-u-20">
+						<!-- Main Image continaing the ImageMap Feature -->
+						<div id="shopImageMap" class="card-image">
+						</div>
+						<!-- Overview Title Heading for Description -->
+						<div class="card-title mg-u-0">
+							<h4>Description</h4>
+						</div>
+						<!-- Description -->
+						<span id="shopDescription"></span>
+						<!-- Overview Title Heading for Specification -->
+						<div class="card-title mg-u-0">
+							<h4>Specification</h4>
+						</div>
+						<!-- Specifications -->
+						<table id="shopSpecification" class="table table-condensed container">
+							<tr class="row">
+								<td id="spec1" class="col point"></td>
+								<td id="spec2" class="col point"></td>
+							</tr>
+							<tr class="row">
+								<td id="spec3" class="col point"></td>
+								<td id="spec4" class="col point"></td>
+							</tr>
+							<tr class="row">
+								<td id="spec5" class="col point"></td>
+								<td id="spec6" class="col point"></td>
+							</tr>
+							<tr class="row">
+								<td id="spec7" class="col point"></td>
+								<td id="spec8" class="col point"></td>
+							</tr>
+						</table>
+						<!-- Message about the selection of section from the image -->
+						<div id="imageHoverMessage" class="col-md-8 offset-lg-2 text-center pd-0">
+							<span>
+								* Select what you want to shop from the image
+							</span>
+						</div>
+						<!-- Link to Shopping Site -->
+						<div id="shopLinkDiv" class="col-lg-2 offset-lg-5 pd-0">
+							<a id="shopLink" href="#">
+								<button type="button" class="btn btn-primary btn-block btn-sm">Shop Now</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				<!-- This is the right block showing the top clubs which have the highest sales and the Premier League merchandise -->
+				<div class="col-lg-3 col-md-3">
+					<!-- This Section is for the top 5 clubs with highest sales -->
+					<div class="row mg-0">
+						<div class="card card-color mg-u-20">
+							<!-- Display Premier League Photo -->
+							<div class="card-noshadow">
+								<img src="images/Premier_League-Logo-2.png" alt="Premier League Logo" class="myPhoto img-responsive">
+							</div>
+							<!-- Display the card Title -->
+							<div class="card-title">
+								<h4>Top Clubs</h4>
+							</div>
+							<!-- Main <div> block that contains top 5 clubs in Sales -->
+							<div class="mg--25">
+								<!-- One Row of Club with most sale -> 1 -->
+								<div class="container-fluid pd-d-15">
+									<div class="row mg-0 pd-0 text-center">
+										<div class="col-lg-10 offset-lg-1 pd-0">
+											<button type="button" id="clubMCI" name="clubSelection" class="btn btn-primary btn-block btn-lg pd-l-0 pd-r-0">
+												<div class="row mg-0 pd-0">
+													<div class="col-lg-2 offset-lg-1 pd-0">
+														<img src="images/clubs/mci.png" alt="Manchester City" class="matchOverviewLogo">
+													</div>
+													<div name="clubButton" class="col pd-0 text-left">
+														<span id="mci" class="small">Manchester City</span>
+													</div>
+												</div>
+											</button>
+										</div>
+									</div>
+								</div>
+								<!-- Second Row of Club with most sale -> 2 -->
+								<div class="container-fluid pd-d-15">
+									<div class="row mg-0 pd-0 text-center">
+										<div class="col-lg-10 offset-lg-1 pd-0">
+											<button type="button" id="clubMUN" name="clubSelection" class="btn btn-primary btn-block btn-lg pd-l-0 pd-r-0">
+												<div class="row mg-0 pd-0">
+													<div class="col-lg-2 offset-lg-1 pd-0">
+														<img src="images/clubs/mun.png" alt="Manchester United" class="matchOverviewLogo">
+													</div>
+													<div name="clubButton" class="col pd-0 text-left">
+														<span id="mci" class="small">Manchester United</span>
+													</div>
+												</div>
+											</button>
+										</div>
+									</div>
+								</div>
+								<!-- Third Row of Club with most sale -> 3 -->
+								<div class="container-fluid pd-d-15">
+									<div class="row mg-0 pd-0 text-center">
+										<div class="col-lg-10 offset-lg-1 pd-0">
+											<button type="button" id="clubLIV" name="clubSelection" class="btn btn-primary btn-block btn-lg pd-l-0 pd-r-0">
+												<div class="row mg-0 pd-0">
+													<div class="col-lg-2 offset-lg-1 pd-0">
+														<img src="images/clubs/liv.png" alt="Manchester City" class="matchOverviewLogo">
+													</div>
+													<div name="clubButton" class="col pd-0 text-left">
+														<span id="mci" class="small">Liverpool</span>
+													</div>
+												</div>
+											</button>
+										</div>
+									</div>
+								</div>
+								<!-- Fourth Row of Club with most sale -> 4 -->
+								<div class="container-fluid pd-d-15">
+									<div class="row mg-0 pd-0 text-center">
+										<div class="col-lg-10 offset-lg-1  pd-0">
+											<button type="button" id="clubCHE" name="clubSelection" class="btn btn-primary btn-block btn-lg pd-l-0 pd-r-0">
+												<div class="row mg-0 pd-0">
+													<div class="col-lg-2 offset-lg-1 pd-0">
+														<img src="images/clubs/che.png" alt="Chelsea" class="matchOverviewLogo">
+													</div>
+													<div name="clubButton" class="col pd-0 text-left">
+														<span id="mci" class="small">Chelsea</span>
+													</div>
+												</div>
+											</button>
+										</div>
+									</div>
+								</div>
+								<!-- Fifth Row of Club with most sale -> 5 -->
+								<div class="container-fluid pd-d-15">
+									<div class="row mg-0 pd-0 text-center">
+										<div class="col-lg-10 offset-lg-1  pd-0">
+											<button type="button" id="clubARS" name="clubSelection" class="btn btn-primary btn-block btn-lg pd-l-0 pd-r-0">
+												<div class="row mg-0 pd-0">
+													<div class="col-lg-2 offset-lg-1 pd-0">
+														<img src="images/clubs/ars.png" alt="Arsenal" class="matchOverviewLogo">
+													</div>
+													<div name="clubButton" class="col pd-0 text-left">
+														<span id="mci" class="small">Arsenal</span>
+													</div>
+												</div>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------------------------------------------->
+		<!-- End of Body -->
+		<!-------------------------------------------------------------->
+		<!-------------------------------------------------------------->
+		<!-- Start of Footer -->
+		<!-------------------------------------------------------------->
+		<footer class="bottombar">
+			<div class="row text-center">
+				<div class="col-lg-4 mg-u-30 border-right-light">
+					<h5 class="underline">About Site</h5>
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="sourceLog.html">Source Log</a></li>
+						<li class="nav-item"><a class="nav-link" href="sitemap.html">Sitemap</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 mg-u-30 border-right-light">
+					<h5 class="underline">Social</h5>
+					<ul class="navbar-nav socialList">
+						<li class="nav-item"><a class="nav-link fa fa-instagram" href="https://www.instagram.com/premierleague/?hl=en"></a></li>
+						<li class="nav-item"><a class="nav-link fa fa-facebook" href="https://www.facebook.com/premierleague/"></a></li>
+						<li class="nav-item"><a class="nav-link fa fa-twitter" href="https://twitter.com/premierleague?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"></a></li>
+						<li class="nav-item"><a class="nav-link fa fa-youtube" href="https://www.youtube.com/channel/UCG5qGWdu8nIRZqJ_GgDwQ-w"></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 mg-u-30">
+					<h5 class="underline">User Information</h5>
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="feedback.html">Feedback Form</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row mg-0">
+				<span class="mg-d-30 mg-u-30 full-width text-center">This Website is Designed for <b>COMP6780 Web Development and Design</b> at ANU</span>
+			</div>
+		</footer>
+		<!-------------------------------------------------------------->
+		<!-- End of Footer -->
+		<!-------------------------------------------------------------->
+	</div>
+</body>
+</html>

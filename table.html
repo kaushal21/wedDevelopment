@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leagues Table</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/WebAssignmentCss.css">
+	<!-- Jquery Link -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Custom JavaScript -->
+	<script type="text/javascript" src="js/tableJavascript.js"></script>
+</head>
+<body>
+	<div id="main-wrapper">
+		<!-------------------------------------------------------------->
+		<!-- Start of Header -->
+		<!-------------------------------------------------------------->
+		<header class="topbar">
+			<nav class="navbar navbar-expand-lg">
+				<!-- Logo For the Website -->
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						<img src="images/Premier_League-Logo.png" alt="Premier League Logo" class="logo">
+					</a>
+				</div>
+				<!-- Header Options i.e. Top Menu Bar -->
+  				<div class="mg-l-30" id="headerBar">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="aboutMe.html">About Me</a></li>
+						<li class="nav-item"><a class="nav-link" href="missionStatement.html">Mission Statement</a></li>
+						<li class="nav-item"><a class="nav-link active" href="table.html">Table</a></li>
+						<li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+						<li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-------------------------------------------------------------->
+		<!-- End of Header -->
+		<!-------------------------------------------------------------->
+		<!-------------------------------------------------------------->
+		<!-- Start of Body-->
+		<!-------------------------------------------------------------->
+		<div class="row dont-break-out">
+			<!-- Blank <div> block used as an offset -->
+			<div class="col-lg-1"></div>
+			<!-- This is the main block that holds the table -->
+			<div class="col-lg-10">
+				<div class="card card-color">
+					<!-- Heading for the table -->
+					<div class="card-title">
+						<h4>League Table: 
+							<select id="season" name="season" class="btn btn-info btn-lg">
+								<option value="2020/21"> 2020/21 </option>
+								<option value="2019/20"> 2019/20 </option>
+								<option value="2018/19"> 2018/19 </option>
+								<option value="2017/18"> 2017/18 </option>
+								<option value="2016/17"> 2016/17 </option>
+							</select>
+						</h4>
+					</div>
+					<!-- The table using some bootstrap classes and some modified one -->
+					<table id="leagueTable" class="table table-responsive increaseSpacing">
+					</table>
+					<!-- The shows the meaning for the colors in the table -->
+					<div class="row mg-u-20 text-center">
+						<div class="col-lg-4">
+							<span><span class="pd-l-10 pd-r-10 mg-r-10 success"></span> Qualified for UEFA Champions League</span>
+						</div>
+						<div class="col-lg-4">
+							<span><span class="pd-l-10 pd-r-10 mg-r-10 info"></span> Qualified for UEFA Europa League</span>
+						</div>
+						<div class="col-lg-4">
+							<span><span class="pd-l-10 pd-r-10 mg-r-10 danger"></span> Relegation</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<!-------------------------------------------------------------->
+		<!-- End of Body -->
+		<!-------------------------------------------------------------->
+		<!-------------------------------------------------------------->
+		<!-- Start of Footer -->
+		<!-------------------------------------------------------------->
+		<footer class="bottombar">
+			<div class="row text-center">
+				<div class="col-lg-4 mg-u-30 border-right-light">
+					<h5 class="underline">About Site</h5>
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="sourceLog.html">Source Log</a></li>
+						<li class="nav-item"><a class="nav-link" href="sitemap.html">Sitemap</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 mg-u-30 border-right-light">
+					<h5 class="underline">Social</h5>
+					<ul class="navbar-nav socialList">
+						<li class="nav-item"><a class="nav-link fa fa-instagram" href="https://www.instagram.com/premierleague/?hl=en"></a></li>
+						<li class="nav-item"><a class="nav-link fa fa-facebook" href="https://www.facebook.com/premierleague/"></a></li>
+						<li class="nav-item"><a class="nav-link fa fa-twitter" href="https://twitter.com/premierleague?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"></a></li>
+						<li class="nav-item"><a class="nav-link fa fa-youtube" href="https://www.youtube.com/channel/UCG5qGWdu8nIRZqJ_GgDwQ-w"></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 mg-u-30">
+					<h5 class="underline">User Information</h5>
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="feedback.html">Feedback Form</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row mg-0">
+				<span class="mg-d-30 mg-u-30 full-width text-center">This Website is Designed for <b>COMP6780 Web Development and Design</b> at ANU</span>
+			</div>
+		</footer>
+		<!-------------------------------------------------------------->
+		<!-- End of Footer -->
+		<!-------------------------------------------------------------->
+	</div>
+</body>
+</html>

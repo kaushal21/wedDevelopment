@@ -1,0 +1,610 @@
+/*******************************************************************************/
+/************************** Global Tags and Classes ****************************/
+/*******************************************************************************/
+/* Change the background color of body tag to white */
+body {
+	background: #fff;
+	height: 100%;
+}
+/* Done for all the hyperlink tags in the website*/
+a {
+	color: inherit;
+	cursor: pointer;
+}
+/* Make the cursor Pointer */
+.pointer {
+	cursor: pointer;
+}
+/* Make text justify for all the span tags */
+span {
+	text-align: justify;
+}
+ul li{
+	list-style-type: none;
+}
+/* Make the cursor Pointer */
+area {
+	cursor: pointer;
+}
+/* Make the text underlined */
+.underline {
+	text-decoration: underline;
+}
+#main-wrapper {
+	height: auto !important;
+	height: 100%;
+}
+.container-fluid {
+	padding: 0;
+}
+/*******************************************************************************/
+/*********************************** Header ************************************/
+/*******************************************************************************/
+/* Topbar is the topbar that is heading in all the pages */
+.topbar {
+	display: block;
+	z-index: 100;
+	position: relative;
+	background: #37003c;
+	color: #fff;
+	width: 100%;
+	height: fit-content;
+	border-radius: 0;
+}
+/* This is for the logo on the topbar */
+.navbar-header {
+	background: white;
+	width: auto;
+	height: fit-content;
+	border-top-right-radius: 50% ;
+	border-bottom-right-radius: 50%;
+	margin: -16px 0 -16px -16px; 
+}
+/* This overwrites the pre existing bootstrap class and is for the logo on the topbar */
+.navbar-brand {
+	width: fit-content;
+	height: fit-content;
+}
+/* This defines the size of the logo on the topbar */
+.logo {
+	width: 160px;
+	height: auto;
+	margin: -16px 0 -16px 0;
+}
+/* This is for the padding on heading names on the topbar*/
+.nav-item {
+	padding: 0 10px 0 10px;
+}
+/* This increases the size of the current page's name on the header topbar */
+a.nav-link.active {
+	-webkit-transform: scale(1.25);
+	font-weight: bolder;
+}
+/* This performs the color change and size change when we move the cursor over the items on the hearder*/
+.nav-item a.nav-link:hover {
+	-webkit-transform: scale(1.25);
+	transform: ease-in;
+	cursor: pointer;
+	color: #999;
+	text-underline-position: 
+}
+/*******************************************************************************/
+/*********************************** Footer ************************************/
+/*******************************************************************************/
+/* Bottombar is the bottombar that is footer in all the pages */
+.bottombar {
+	display: block;
+	z-index: 100;
+	position: relative;
+	background: #37003c;
+	color: #fff;
+	width: 100%;
+	margin-bottom: 0; 
+	height: fit-content;
+	border-radius: 0;
+}
+/* Display the white line separating the different sections in the footer if the screen is big enough*/
+@media (min-width: 992px) {
+	.border-right-light {
+		border-right-style: solid;
+		border-width: 0.5px;
+		border-right-color: white;
+	}
+}
+/* This increases the size of the current page's name on the header topbar */
+a.nav-link.active {
+	-webkit-transform: scale(1.25);
+	font-weight: bolder;
+}
+/* This performs the color change and size change when we move the cursor over the items on the hearder*/
+.nav-item a.nav-link:hover {
+	-webkit-transform: scale(1.25);
+	transform: ease-in;
+	cursor: pointer;
+	color: #999;
+	text-underline-position: 
+}
+.bottombar .row{
+	margin-bottom: 0;
+}
+/*******************************************************************************/
+/*********************************** Card **************************************/
+/*******************************************************************************/
+/* This updates the bootstrap class row*/
+.row {
+	margin: 2%;
+}
+/* Used for creating a box */
+.card {
+    position: relative;
+    display: flex;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+    padding: 1.5rem;
+    align-content: center;
+}
+/* Used for setting the specified color for the box */
+.card.card-color {
+	background: #37003C;
+	color: white;
+}
+/* Title for the card */
+.card-title {
+	width: 100%;
+	color: white;
+	text-align: center;
+	font-weight: bolder;
+}
+/* This makes the image in top of card pop out and set its dimension */
+.card-image img {
+    margin-top: -45px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	width: 100%;
+	height: auto;
+}
+/* This makes the image in top of card pop out without any shadow of it and set its dimension to fullest */
+.card-noshadow img{
+    margin-top: -45px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+	width: 100%;
+	height: auto;
+}
+/*******************************************************************************/
+/*********************************** Match Overview ****************************/
+/*******************************************************************************/
+/* Team name font size setting */
+.teamName {
+	font-weight: bolder;
+}
+/* Makes the score bigger, bolder and brighter */
+.teamScore {
+	color: #fff;
+	font-weight: bolder;
+	font-size: 22px;
+}
+/* Makes the logo of specific size */
+.matchOverviewLogo {
+	width: 2rem;
+	height: 2rem;
+	text-align: center;
+	vertical-align: center;
+}
+/*******************************************************************************/
+/*********************************** Social ************************************/
+/*******************************************************************************/
+/* This Makes the socail list horizontal */
+ul.socialList, li{
+	display: inline-block;
+}
+/* The socail icon class */
+.fa {
+	margin: 10px 5px 0 5px;
+	font-size: 24px;
+	text-decoration: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+/* Make the socail icon ligher on hover */
+.fa:hover {
+	opacity: 0.75;
+}
+/* Color Code for Instagram */
+.fa-instagram {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	color: white;
+}
+/* Color Code for Facebook */
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+/* Color Code for Twitter */
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+/* Color Code for YouTube */
+.fa-youtube {
+	background: #bb0000;
+	color: white;
+}
+/*******************************************************************************/
+/*********************************** Feedback **********************************/
+/*******************************************************************************/
+/* This class covers the whole feedbac form */
+.feedback {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 100%;
+	width: 100%;
+	padding: 2% 0;
+}
+/* This is used to style the textarea for the feedback where the user will enter his/her feedback */
+.feedbackText {
+	width: 100%;
+	min-height: 200px;
+	font-family: sans-serif;
+	font-size: 1rem; 
+}
+/* This used to display the light border when the screen is big enough to separate the form into two section */
+@media (min-width: 992px) {
+	.light-right-border {
+		border-right-style: solid;
+		border-color: white;
+	}
+}
+/*******************************************************************************/
+/*********************************** Tables ************************************/
+/*******************************************************************************/
+/* This class breaks the line to fit the content on the screen */
+.dont-break-out {
+	/* These are technically the same, but use both */
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	-ms-word-break: break-all;
+	/* This is the dangerous one in WebKit, as it breaks things wherever */
+	word-break: break-all;
+	/* Instead use this non-standard one: */
+	word-break: break-word;
+	/* Adds a hyphen where the word breaks, if supported (No Blink) */
+	-ms-hyphens: auto;
+	-moz-hyphens: auto;
+	-webkit-hyphens: auto;
+	hyphens: auto;
+}
+
+/* This increases the space in the table */
+.increaseSpacing{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-table;
+}
+/* This updates the table data block with the required padding */
+.increaseSpacing td {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+/* Change the color of success */
+.success {
+	background: #E800FF;
+}
+/* Change the color of info */
+.info {
+	background: #9800A6;
+}
+/* Change the color of danger */
+.danger {
+	background: #1C001F;
+}
+/* For Dividing line */
+.hrDivider {
+	margin: 15px 30px 15px 30px;
+}
+/*******************************************************************************/
+/*********************************** Photos ************************************/
+/*******************************************************************************/
+/* Making the transition effect on the image blocks */
+.image_blocks img {
+	overflow: hidden;
+	transition: transform .25s ease-in;
+}
+/* Growing the image on hover */
+.image_blocks img:hover {
+	transform: scale(1.1);
+}
+/* Container that holds the complete page for the grown image */
+.growingImageContainer {
+	display: none;
+	position: fixed;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.4);
+}
+/* Container that holds the image when grown */
+.grownImageContainer {
+	margin: auto;
+	background-color: #fff;
+	position: relative;
+	padding: 0;
+	outline: 0;
+	width: 80%;
+	height: 90%;
+	top: 5%;
+}
+/* Display the content on the top right corner of the screen */
+.display-topright {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+/* To fit the image in the given space */
+.fit {
+	width: 100%;
+	height: 100%;
+}
+/* The Next and Prev Buttons on the image Slideshow*/
+.next, .prev {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	background-color: rgba(0, 0, 0, 0.4);
+	user-select: none;
+}
+/* Position the Next button to the right side of the screen */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Set display as none i.e. Hide the block */
+.display_none {
+	display: none;
+}
+/* Container for the image slideshow*/
+.mySlideContainer {
+	width: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+/* Structure for name: quantity -> full, half (or) quater */
+/*******************************************************************************/
+/*********************************** Width *************************************/
+/*******************************************************************************/
+.full-width{
+	width: 100%
+}
+.half-width{
+	width: 50%;
+}
+.quater-width{
+	width: 25%;
+}
+/* Structure for name: mg -> margin (or) pd -> padding, next letter means the direction, final digit means the amount which we are setting to it */
+/*******************************************************************************/
+/*********************************** Margins ***********************************/
+/*******************************************************************************/
+.mg-l-0 {
+	margin-left: 0; 
+}
+.mg-l-5 {
+	margin-left: 5px; 
+}
+.mg-l-10 {
+	margin-left: 10px; 
+}
+.mg-l-15 {
+	margin-left: 15px; 
+}
+.mg-l-20 {
+	margin-left: 20px; 
+}
+.mg-l-25 {
+	margin-left: 25px; 
+}
+.mg-l-30 {
+	margin-left: 30px; 
+}
+.mg-r-0 {
+	margin-right: 0; 
+}
+.mg-r-5 {
+	margin-right: 5px; 
+}
+.mg-r-10 {
+	margin-right: 10px; 
+}
+.mg-r-15 {
+	margin-right: 15px; 
+}
+.mg-r-20 {
+	margin-right: 20px; 
+}
+.mg-r-25 {
+	margin-right: 25px; 
+}
+.mg-r-30 {
+	margin-right: 30px; 
+}
+.mg-u-0 {
+	margin-top: 0; 
+}
+.mg-u-5 {
+	margin-top: 5px; 
+}
+.mg-u-10 {
+	margin-top: 10px; 
+}
+.mg-u-15 {
+	margin-top: 15px; 
+}
+.mg-u-20 {
+	margin-top: 20px; 
+}
+.mg-u-25 {
+	margin-top: 25px; 
+}
+.mg-u-30 {
+	margin-top: 30px; 
+}
+.mg-d-0 {
+	margin-bottom: 0; 
+}
+.mg-d-5 {
+	margin-bottom: 5px; 
+}
+.mg-d-10 {
+	margin-bottom: 10px; 
+}
+.mg-d-15 {
+	margin-bottom: 15px; 
+}
+.mg-d-20 {
+	margin-bottom: 20px; 
+}
+.mg-d-25 {
+	margin-bottom: 25px; 
+}
+.mg-d-30 {
+	margin-bottom: 30px; 
+}
+.mg-0 {
+	margin: 0px; 
+}
+.mg-5 {
+	margin: 5px; 
+}
+.mg-10 {
+	margin: 10px; 
+}
+.mg-30 {
+	margin: 30px; 
+}
+/*******************************************************************************/
+/*********************************** Padding ***********************************/
+/*******************************************************************************/
+.pd-l-0 {
+	padding-left: 0; 
+}
+.pd-l-5 {
+	padding-left: 5px; 
+}
+.pd-l-10 {
+	padding-left: 10px; 
+}
+.pd-l-15 {
+	padding-left: 15px; 
+}
+.pd-l-20 {
+	padding-left: 20px; 
+}
+.pd-l-25 {
+	padding-left: 25px; 
+}
+.pd-l-30 {
+	padding-left: 30px; 
+}
+.pd-r-0 {
+	padding-right: 0; 
+}
+.pd-r-5 {
+	padding-right: 5px; 
+}
+.pd-r-10 {
+	padding-right: 10px; 
+}
+.pd-r-15 {
+	padding-right: 15px; 
+}
+.pd-r-20 {
+	padding-right: 20px; 
+}
+.pd-r-25 {
+	padding-right: 25px; 
+}
+.pd-r-30 {
+	padding-right: 30px; 
+}
+.pd-u-0 {
+	padding-top: 0; 
+}
+.pd-u-5 {
+	padding-top: 5px; 
+}
+.pd-u-10 {
+	padding-top: 10px; 
+}
+.pd-u-15 {
+	padding-top: 15px; 
+}
+.pd-u-20 {
+	padding-top: 20px; 
+}
+.pd-u-25 {
+	padding-top: 25px; 
+}
+.pd-u-30 {
+	padding-top: 30px; 
+}
+.pd-d-0 {
+	padding-bottom: 0; 
+}
+.pd-d-5 {
+	padding-bottom: 5px; 
+}
+.pd-d-10 {
+	padding-bottom: 10px; 
+}
+.pd-d-15 {
+	padding-bottom: 15px; 
+}
+.pd-d-20 {
+	padding-bottom: 20px; 
+}
+.pd-d-25 {
+	padding-bottom: 25px; 
+}
+.pd-d-30 {
+	padding-bottom: 30px; 
+}
+.pd-0 {
+	padding: 0px; 
+}
+.pd-5 {
+	padding: 5px; 
+}
+.pd-10 {
+	padding: 10px; 
+}
+/* This is special case used to nullify the padding done inside card */
+.pd--25{
+	padding: 0 -25px 0 -25px;
+}
+.mg--25{
+	margin: 0 -25px 0 -25px;
+}

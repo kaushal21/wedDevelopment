@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Feedback Form</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/WebAssignmentCss.css">
+	<link rel="stylesheet" type="text/css" href="css/margin.css">
+</head>
+<body>
+	<div id="main-wrapper">
+		<!-------------------------------------------------------------->
+		<!-- Start of Header -->
+		<!-------------------------------------------------------------->
+		<header class="topbar">
+			<nav class="navbar navbar-expand-lg">
+				<!-- Logo For the Website -->
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						<img src="images/Premier_League-Logo.png" alt="Premier League Logo" class="logo">
+					</a>
+				</div>
+				<!-- Header Options i.e. Top Menu Bar -->
+  				<div class="mg-l-30" id="headerBar">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="aboutMe.html">About Me</a></li>
+						<li class="nav-item"><a class="nav-link" href="missionStatement.html">Mission Statement</a></li>
+						<li class="nav-item"><a class="nav-link" href="table.html">Table</a></li>
+						<li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+						<li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-------------------------------------------------------------->
+		<!-- End of Header -->
+		<!-------------------------------------------------------------->
+		<!-------------------------------------------------------------->
+		<!-- Start of Body-->
+		<!-------------------------------------------------------------->
+        <div class="feedback">
+        	<div class="row">
+				<!-- This is the main block that holds the table -->
+	            <div class="col-lg-8 offset-lg-2">
+		            <div class="card card-color">
+		            	<!-- Form that directly goes to the mail -->
+		                <form class="form-horizontal form-material" id="feedback" action="mailto:u7028766@anu.edu.au" method="post">
+		                	<!-- Feedback Form Heading  -->
+		                    <h3 class="card-title mg-u-0 mg-d-30">Feedback Form</h3>
+		                    <div class="row">
+			                    <div class="col-lg-5 offset-lg-1 pd-30 light-right-border">
+				                    <!-- Input class for name -->
+				                    <div class="form-group">
+				                        <div class="col-xs-12">
+				                            <input id="name" name="name" class="form-control" type="text" required="" placeholder="Name">
+				                        </div>
+				                    </div>
+				                    <!-- Input class for email -->
+				                    <div class="form-group">
+				                        <div class="col-xs-12">
+				                            <input id="email" name="email" class="form-control" type="email" required="" placeholder="E-mail">
+				                        </div>
+				                    </div>
+				                    <!-- Input for gender which is from a drop down select menu  -->
+				                    <div class="form-group">
+				                        <div class="col-xs-12">
+				                        	<select id="gender" name="gender" class="form-control" required="">
+				                        		<option value="" selected disabled hidden>Gender</option>
+				                        		<option value="male">Male</option>
+				                        		<option value="female">Female</option>
+				                        		<option value="others">Other</option>
+				                        		<option value="none">I prefer not to say</option>
+				                        	</select>
+				                        </div>
+				                    </div>
+				                    <!-- This is text area for the actual comment -->
+				                    <div class="form-group">
+				                    	<div class="col-xs-12">
+				                    		<textarea id="feedback" name="feedback" class="feedbackText" placeholder="Feedback"></textarea>
+				                    	</div>
+				                    </div>
+			                    </div>
+			                    <div class="col-lg-5 pd-30">
+				                    <!-- Input for Supporting Club which is from a drop down select menu  -->
+				                    <div class="form-group">
+				                        <div class="col-xs-12">
+				                        	<select id="supportingClub" name="supportingClub" class="form-control">
+				                        		<option value="" selected disabled hidden>Supporting Club</option>
+				                        		<option value="Arsenal">Arsenal</option>
+				                        		<option value="Chelsea">Chelsea</option>
+				                        		<option value="Liverpool">Liverpool</option>
+				                        		<option value="ManchesterCity">Manchester City</option>
+				                        		<option value="ManchesterUnited">Manchester United</option>
+				                        	</select>
+				                        </div>
+				                    </div>
+				                    <!-- Input class for number of years following football -->
+				                    <div class="form-group">
+				                        <div class="col-xs-12">
+				                            <input id="followingYears" name="followingYears" class="form-control" type="number" required="" placeholder="Following Since(Number in Years)">
+				                        </div>
+				                    </div>
+				                    <!-- Input class for whether the user be interested in learning football -->
+				                    <div class="form-group">
+				                        <div class="col-xs-12">
+				                        	<span>Are you Interested in Learing Football Tricks:</span>
+				                        	<div class="row">
+				                        		<div class="col-lg-6">
+						                        	<div class="form-check">
+							                            <input id="interestedInLearning" name="interestedInLearning" class="form-control form-check-input" type="checkbox">
+							                            <span>Yes</span>
+							                        </div>
+				                        		</div>
+				                        		<div class="col-lg-6">
+						                        	<div class="form-check">
+							                            <input id="notInterestedInLearning" name="notInterestedInLearning" class="form-control form-check-input" type="checkbox">
+							                            <span>No</span>
+							                        </div>
+				                        		</div>
+				                        	</div>
+				                        </div>
+				                    </div>
+				                    <!-- Input class for whether the website was usesfull or not -->
+				                    <div class="form-group">
+				                        <div class="col-xs-12">
+				                        	<span>Was this website helpful</span>
+				                        	<div class="row">
+				                        		<div class="col-lg-6">
+						                        	<div class="form-check">
+							                            <input id="websiteUsefull" name="websiteUsefull" class="form-control form-check-input" type="checkbox">
+							                            <span>Yes</span>
+							                        </div>
+							                    </div>
+							                    <div class="col-lg-6">
+						                        	<div class="form-check">
+							                            <input id="websiteNotUsefull" name="websiteNotUsefull" class="form-control form-check-input" type="checkbox">
+							                            <span>No</span>
+							                        </div>
+							                    </div>
+							                </div>
+				                        </div>
+				                    </div>
+			                    </div>
+			                </div>
+		                    <!-- Two buttons, one for submitting and one for clearing the form -->
+		                    <div class="row mg-u-30 form-group text-center">
+		                        <div class="col-lg-4 offset-lg-2">
+		                            <input class="btn btn-info btn-lg btn-block" type="submit">
+		                        </div>
+		                        <div class="col-lg-4">
+		                            <input class="btn btn-success btn-lg btn-block" type="reset">
+		                        </div>
+		                    </div>
+		                </form>
+		            </div>
+	            </div>
+        	</div>
+		</div>
+		<!-------------------------------------------------------------->
+		<!-- End of Body-->
+		<!-------------------------------------------------------------->
+		<!-------------------------------------------------------------->
+		<!-- Start of Footer -->
+		<!-------------------------------------------------------------->
+		<footer class="bottombar">
+			<div class="row text-center">
+				<div class="col-lg-4 mg-u-30 border-right-light">
+					<h5 class="underline">About Site</h5>
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="sourceLog.html">Source Log</a></li>
+						<li class="nav-item"><a class="nav-link" href="sitemap.html">Sitemap</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 mg-u-30 border-right-light">
+					<h5 class="underline">Social</h5>
+					<ul class="navbar-nav socialList">
+						<li class="nav-item"><a class="nav-link fa fa-instagram" href="https://www.instagram.com/premierleague/?hl=en"></a></li>
+						<li class="nav-item"><a class="nav-link fa fa-facebook" href="https://www.facebook.com/premierleague/"></a></li>
+						<li class="nav-item"><a class="nav-link fa fa-twitter" href="https://twitter.com/premierleague?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"></a></li>
+						<li class="nav-item"><a class="nav-link fa fa-youtube" href="https://www.youtube.com/channel/UCG5qGWdu8nIRZqJ_GgDwQ-w"></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 mg-u-30">
+					<h5 class="underline">User Information</h5>
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback Form</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row mg-0">
+				<span class="mg-d-30 mg-u-30 full-width text-center">This Website is Designed for <b>COMP6780 Web Development and Design</b> at ANU</span>
+			</div>
+		</footer>
+		<!-------------------------------------------------------------->
+		<!-- End of Footer -->
+		<!-------------------------------------------------------------->
+	</div>
+</body>
+</html>
