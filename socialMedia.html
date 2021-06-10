@@ -2,13 +2,17 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8"/>
-	<title>Mission Statement</title>
+	<title>Socail Media</title>
 	<link rel="shortcut icon" href="images/PL-Lion.png" type="image/x-icon">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="css/WebAssignmentCss.css">
+	<!-- Jquery Link -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Facbook iFrame script-->
+	<script crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="QZWvyxqZ"></script>	
 </head>
 <body>
 	<div id="main-wrapper">
@@ -27,7 +31,7 @@
 						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="aboutMe.html">About Me</a></li>
 						<li class="nav-item"><a class="nav-link" href="reflection.html">Reflection</a></li>
-						<li class="nav-item"><a class="nav-link active" href="missionStatement.html">Mission Statement</a></li>
+						<li class="nav-item"><a class="nav-link" href="missionStatement.html">Mission Statement</a></li>
 						<li class="nav-item"><a class="nav-link" href="table.html">Table</a></li>
 						<li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
 						<li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
@@ -37,43 +41,47 @@
 		</header>
 		<!-- End of Header -->
 		<!-- Start of Body-->
-		<div class="container-fluid">
-			<div class="row">
-				<!-- Blank <div> block used as an offset -->
-				<div class="col-lg-1"></div>
-				<!-- This is the main block showing the card for mission statement -->
-				<div class="col-lg-10">
-					<div class="card card-color mg-u-20">
-						<!-- Display the 3 images indicating individual parrts of the mission statement in a popped out fasion -->
-						<div class="row mg-0">
-							<div class="col-lg-4 card-image">
-								<img src="images/target_audience.jpg" alt="Target Audience" class="img-responsive">
-							</div>
-							<div class="col-lg-4 card-image">
-								<img src="images/website_functionality.png" alt="Website Functionality" class="img-responsive">
-							</div>
-							<div class="col-lg-4 card-image">
-								<img src="images/new_feature.jpg" alt="New Features" class="img-responsive">
-							</div>
-						</div>
-						<!-- Display the main Heading -->
-						<div class="card-title mg-u-0">
-							<h3>Mission Statement</h3>
-						</div>
-						<!-- Contains the text that needs to be displayed i.e. the Mission Statement -->
-						<p>
-							Mypassionsoccer.com is an online platform where the user can get updated with the scores, tables and all the other things going on in the English premier league. Although I would love to make this a general platform for every major league that is there this one is specifically dedicated to one of the top leagues in the world EPL. I have selected EPL because it is one of the most followed leagues in the world where some of the world's best teams compete for the title claim. EPL, is very well renowned from the beginning itself, attracting many stars in soccer. 
-						</p>
-						<p>
-							This site mainly focused on but is not limited to the person who follows or wants to follow what is going on in EPL. This gives him/her a platform to get updates about the recent activities. Mypassionsoccer.com gives a basic overview of what is the current situation of the league and the clubs in it. 
-						</p>
-						<p>
-							Although EPL has its own site premierleague.com where one can find most of this information. And since this is an official site for the league it can be trusted as well (Most of this site’s data gets updated there), but mypassionsoccer.com differs from this site as we also discuss the basics of soccer with the latest rules that are introduced, explained in a very friendly manner. And since I’m learning machine learning, some predictions are happening for the games. Apart from all that, there is also a community page where one can get involved in a community of a club or maybe of any player.
-						</p>
-						<p>
-							Combining the basic info about rules in soccer with the current situation of the league and with a pinch of machine learning providing some predictions, mypassionsoccer.com provides a complete platform for anyone new who wants to follow this beautiful sport.
-						</p>
+		<div class="row">
+			<!-- Left Side Bar for the feeds -->
+			<div class="offset-lg-1 col-lg-4 text-center">
+				<!-- Facebook Feeds -->
+				<div class="card card-color mg-u-20 mg-d-30">
+					<div class="card-image">
+						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpremierleague&tabs=timeline&small_header=false&adapt_container_width=true&hide_cover=false&data-colorscheme&show_facepile=true&appId" width="340" height="500" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 					</div>
+				</div>
+				<!-- Twitter Feeds -->
+				<div class="card card-color mg-u-30">
+					<div class="card-image">
+						<div class="wb-twitter pd-0 mg-0">
+					        <a class="twitter-timeline" data-theme="dark" data-width="340" data-height="500" href="https://twitter.com/premierleague?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
+					        	Premier League Tweets
+					    	</a>
+					    	<script async src="https://platform.twitter.com/widgets.js"></script>
+					    </div>
+					</div>
+				</div>
+			</div>
+			<!-- Right Side Bar for the feeds for Instagram -->
+			<div class="col-lg-7 text-center">
+				<div id="instagramFeed" class="card card-color mg-u-20">
+					<div id="instafeed-container" class="row pg-0 mg-0"></div>
+					<h5 class="text-center">
+						Above are some <b class="fa-instagram-text">Instagram Feeds</b> from <a href="https://www.instagram.com/mypassionsoccer/" class="fa-instagram-text">@mypassionsoccer</a>
+					</h5>
+					<!-- Custom JavaScript - Instagram Feeds -->
+					<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+					<script>
+						var userFeed = new Instafeed({
+							get: 'user',
+							target: "instafeed-container",
+					    	resolution: 'low_resolution',
+					    	limit: 9,
+							accessToken: 'IGQVJVRHFDNzBIc3E4ZAFdGeEJ3RGtoTkFvZAEFOSW05anlNMzlNMkp0N2ZABSkhKM2x4NDlCd09QOWRiNklzbGRYY0IxeEpocXh3dkpZAQ2QyVHhRV2NNckFtcGJqVmlTRWRMUVJGY1FCcUplb1lvUERZAYwZDZD',
+							template: '<div class="col col-lg-4 mg-u-0 pg-0 mg-d-30"><a href="{{link}}"><div class="card-image"><img title="{{caption}}" class="img-responsive" src="{{image}}"/></div><div class="card-title mg-u-0 mg-d-30"><h6>{{caption}}</h6></div></a></div>'
+						});
+						userFeed.run();
+					</script>
 				</div>
 			</div>
 		</div>

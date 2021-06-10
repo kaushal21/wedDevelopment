@@ -1,23 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8"/>
 	<title>Source Log</title>
+	<link rel="shortcut icon" href="images/PL-Lion.png" type="image/x-icon">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Custom CSS -->
 	<link rel="stylesheet" type="text/css" href="css/WebAssignmentCss.css">
-	<link rel="stylesheet" type="text/css" href="css/margin.css">
+	<link rel="stylesheet" media="print" type="text/css" href="css/print.css">
 	<!-- Jquery Link -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!-- Custom JavaScript -->
-	<script type="text/javascript" src="js/sourceLogJavascript.js"></script>
+	<script src="js/sourceLogJavascript.js"></script>
 </head>
 <body>
 	<div id="main-wrapper">
-		<!-------------------------------------------------------------->
 		<!-- Start of Header -->
-		<!-------------------------------------------------------------->
 		<header class="topbar">
 			<nav class="navbar navbar-expand-lg">
 				<!-- Logo For the Website -->
@@ -31,6 +31,7 @@
 					<ul class="navbar-nav">
 						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
 						<li class="nav-item"><a class="nav-link" href="aboutMe.html">About Me</a></li>
+						<li class="nav-item"><a class="nav-link" href="reflection.html">Reflection</a></li>
 						<li class="nav-item"><a class="nav-link" href="missionStatement.html">Mission Statement</a></li>
 						<li class="nav-item"><a class="nav-link" href="table.html">Table</a></li>
 						<li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
@@ -39,12 +40,8 @@
 				</div>
 			</nav>
 		</header>
-		<!-------------------------------------------------------------->
 		<!-- End of Header -->
-		<!-------------------------------------------------------------->
-		<!-------------------------------------------------------------->
 		<!-- Start of Body-->
-		<!-------------------------------------------------------------->
 		<div class="row dont-break-out">
 			<!-- This is the main block that holds the table -->
 			<div class="col-lg-10 offset-lg-1">
@@ -57,15 +54,17 @@
 					<!-- This is the main table which contains all the info -->
 					<table id="mainSourceLogTable" class="table table-responsive increaseSpacing">
 					</table>
+					<!-- Print Button -->
+					<div id="printButton" class="row">
+						<div class="offset-lg-4 col-lg-4">
+							<button class="btn btn-lg btn-info btn-block" onclick="window.print();return false;">Print</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		<!-------------------------------------------------------------->
 		<!-- End of Body -->
-		<!-------------------------------------------------------------->
-		<!-------------------------------------------------------------->
 		<!-- Start of Footer -->
-		<!-------------------------------------------------------------->
 		<footer class="bottombar">
 			<div class="row text-center">
 				<div class="col-lg-4 mg-u-30 border-right-light">
@@ -73,10 +72,11 @@
 					<ul class="navbar-nav">
 						<li class="nav-item"><a class="nav-link active" href="sourceLog.html">Source Log</a></li>
 						<li class="nav-item"><a class="nav-link" href="sitemap.html">Sitemap</a></li>
+						<li class="nav-item"><a class="nav-link" href="validation.html">W3C Validation</a></li>
 					</ul>
 				</div>
 				<div class="col-lg-4 mg-u-30 border-right-light">
-					<h5 class="underline">Social</h5>
+					<h5 class="underline"><a class="nav-link" href="socialMedia.html">Social</a></h5>
 					<ul class="navbar-nav socialList">
 						<li class="nav-item"><a class="nav-link fa fa-instagram" href="https://www.instagram.com/premierleague/?hl=en"></a></li>
 						<li class="nav-item"><a class="nav-link fa fa-facebook" href="https://www.facebook.com/premierleague/"></a></li>
@@ -95,9 +95,7 @@
 				<span class="mg-d-30 mg-u-30 full-width text-center">This Website is Designed for <b>COMP6780 Web Development and Design</b> at ANU</span>
 			</div>
 		</footer>
-		<!-------------------------------------------------------------->
 		<!-- End of Footer -->
-		<!-------------------------------------------------------------->
 	</div>
 </body>
 </html>

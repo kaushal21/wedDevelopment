@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>W3C Validation</title>
+	<link rel="shortcut icon" href="images/PL-Lion.png" type="image/x-icon">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="css/WebAssignmentCss.css">
+	<!-- Jquery Link -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Custom JavaScript -->
+	<script src="js/photosJavascript.js"></script>
+</head>
+<body>
+	<div id="main-wrapper">
+		<!-- Start of Header -->
+		<header class="topbar">
+			<nav class="navbar navbar-expand-lg">
+				<!-- Logo For the Website -->
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						<img src="images/Premier_League-Logo.png" alt="Premier League Logo" class="logo">
+					</a>
+				</div>
+				<!-- Header Options i.e. Top Menu Bar -->
+  				<div class="mg-l-30" id="headerBar">
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="aboutMe.html">About Me</a></li>
+						<li class="nav-item"><a class="nav-link" href="reflection.html">Reflection</a></li>
+						<li class="nav-item"><a class="nav-link" href="missionStatement.html">Mission Statement</a></li>
+						<li class="nav-item"><a class="nav-link" href="table.html">Table</a></li>
+						<li class="nav-item"><a class="nav-link" href="photos.html">Photos</a></li>
+						<li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<!-- End of Header -->
+		<!-- Start of Body-->
+		<div class="container-fluid">
+			<!-- Row holding the Image Segments of Validated Pages -->
+			<div class="row">
+				<!-- Validation: index.html -->
+				<div class="col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image1" src="images/validation/validationIndex.png" alt="Index Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>Index Page</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>No Errors</h6>
+					</div>
+				</div>
+				<!-- Validation: aboutMe.html -->
+				<div class="col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image2" src="images/validation/validationAboutMe.png" alt="About Me Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>About Me Page</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>No Errors</h6>
+					</div>
+				</div>
+				<!-- Validation: reflection.html -->
+				<div class="col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image3" src="images/validation/validationReflection.png" alt="Reflection Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>Reflection Page</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>No Errors</h6>
+					</div>
+				</div>
+				<!-- Validation: missionStatement.html -->
+				<div class="col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image4" src="images/validation/validationMissionStatement.png" alt="Mission Statement Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>Mission Statement Page</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>No Errors</h6>
+					</div>
+				</div>
+			</div>
+			<!-- The Second Row which also holds the Image Segments of Validated Pages -->
+			<div class="row">
+				<!-- Validation: table.html -->
+				<div class="col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image5" src="images/validation/validationTable.png" alt="Table Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>Table Page</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>No Errors</h6>
+					</div>
+				</div>
+				<!-- Validation: photos.html -->
+				<div class="col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image6" src="images/validation/validationPhotos.png" alt="Photos Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>Photos Page</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>5 Errors</h6>
+						<span>
+							All these errors are the same as shown in the image. This is caused because there is no name attribute in the div tag. This is done in order for the javascript to work properly, the functionslity that javascript brings to this page is the image carousel on the top of the page.
+						</span>
+					</div>
+				</div>
+				<!-- Validation: shop.html -->
+				<div class="col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image7" src="images/validation/validationShop.png" alt="Shop Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>Shop Page</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>6 Errors</h6>
+						<span>
+							All these errors are raised becaues of the editing done on the buttons. I have made the button with the team logo and thier name, which is causing the error.
+						</span>
+					</div>
+				</div>
+				<!-- Validation: sourceLog.html -->
+				<div class="col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image8" src="images/validation/validationSourceLog.png" alt="Source Log Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>Source Log Page</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>No Errors</h6>
+					</div>
+				</div>
+			</div>
+			<!-- The Third Row which also holds the Image Segments of Validated Pages -->
+			<div class="row">
+				<!-- Validation: sitemap.html -->
+				<div class="col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image9" src="images/validation/validationSitemap.png" alt="Sitemap Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>Sitemap Page</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>No Errors</h6>
+					</div>
+				</div>
+				<!-- Validation: socialMedia.html -->
+				<div class="col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image10" src="images/validation/validationSocialMedia.png" alt="Social Media Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>Social Media Page</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>No Errors</h6>
+					</div>
+				</div>
+				<!-- Validation: feedback.html -->
+				<div class="col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image11" src="images/validation/validationFeedback.png" alt="Feedback Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>Feedback Page</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>No Errors</h6>
+					</div>
+				</div>
+				<!-- Validation: validation.html -->
+				<div class="col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image12" src="images/validation/validationValidation.png" alt="Validation Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>Validation Page</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>No Errors</h6>
+					</div>
+				</div>
+			</div>
+			<!-- The Fourth Row which also holds the Image Segments of Validated CSS Pages -->
+			<div class="row">
+				<!-- Validation: WebAssignmentCss.css -->
+				<div class="offset-lg-3 col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image13" src="images/validation/validationCSS.png" alt="Web Assignment CSS Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>Web Assignment CSS</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>5 Errors</h6>
+						<span>
+							All the warning that we have for this page's validation is for the webit-transform which is used to help in some of the animations that we have in the website. While the errors are for the "transition" property and its value "ease-in". This is used to have the smooth easing effect in the website.
+						</span>
+					</div>
+				</div>
+				<!-- Validation: print.css -->
+				<div class="col-lg-3">
+					<div class="card card-color mg-u-20 text-center image_blocks">
+						<!-- The Photo -->
+						<div class="card-image">
+							<img id="image14" src="images/validation/validationPrint.png" alt="Print CSS Page Validation" class="img-responsive pointer" onclick="onClick(this);">
+						</div>
+						<!-- Page Title -->
+						<div class="card-title mg-u-0">
+							<h4>Print CSS</h4>
+						</div>
+						<!-- Short Description of Validation -->
+						<h6>No Errors</h6>
+					</div>
+				</div>
+			</div>
+			<!-- This Section covers the whole display to show the clicked image -->
+			<div id="onClickBiggerImage" class="growingImageContainer" onclick="this.style.display='none'">
+				<span class="btn btn-danger btn-lg display-topright">&times;</span>
+				<div class="grownImageContainer">
+					<img id="biggerImage" src="#" alt="" class="img-responsive fit">
+				</div>
+			</div>
+		</div>
+		<!-- End of Body -->
+		<!-- Start of Footer -->
+		<footer class="bottombar">
+			<div class="row text-center">
+				<div class="col-lg-4 mg-u-30 border-right-light">
+					<h5 class="underline">About Site</h5>
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="sourceLog.html">Source Log</a></li>
+						<li class="nav-item"><a class="nav-link" href="sitemap.html">Sitemap</a></li>
+						<li class="nav-item"><a class="nav-link" href="validation.html">W3C Validation</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 mg-u-30 border-right-light">
+					<h5 class="underline"><a class="nav-link" href="socialMedia.html">Social</a></h5>
+					<ul class="navbar-nav socialList">
+						<li class="nav-item"><a class="nav-link fa fa-instagram" href="https://www.instagram.com/premierleague/?hl=en"></a></li>
+						<li class="nav-item"><a class="nav-link fa fa-facebook" href="https://www.facebook.com/premierleague/"></a></li>
+						<li class="nav-item"><a class="nav-link fa fa-twitter" href="https://twitter.com/premierleague?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"></a></li>
+						<li class="nav-item"><a class="nav-link fa fa-youtube" href="https://www.youtube.com/channel/UCG5qGWdu8nIRZqJ_GgDwQ-w"></a></li>
+					</ul>
+				</div>
+				<div class="col-lg-4 mg-u-30">
+					<h5 class="underline">User Information</h5>
+					<ul class="navbar-nav">
+						<li class="nav-item"><a class="nav-link" href="feedback.html">Feedback Form</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row mg-0">
+				<span class="mg-d-30 mg-u-30 full-width text-center">This Website is Designed for <b>COMP6780 Web Development and Design</b> at ANU</span>
+			</div>
+		</footer>
+		<!-- End of Footer -->
+	</div>
+</body>
+</html>
