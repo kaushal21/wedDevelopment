@@ -1,0 +1,16 @@
+body{
+	-webkit-print-color-adjust:exact !important;
+	font: 12pt Georgia, "Times New Roman", Times, serif;
+	line-height: 1.3;
+}
+header, footer, nav, form, iframe, #printButton {
+  display: none;
+}
+.bottombar {
+	display: none;
+}
+@media print {
+    table {
+        color: black;
+    } 
+}

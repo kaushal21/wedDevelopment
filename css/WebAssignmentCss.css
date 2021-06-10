@@ -16,7 +16,7 @@ a {
 	cursor: pointer;
 }
 /* Make text justify for all the span tags */
-span {
+span, p{
 	text-align: justify;
 }
 ul li{
@@ -176,6 +176,14 @@ a.nav-link.active {
 	width: 100%;
 	height: auto;
 }
+/* This makes the iframe for the social media in top of card pop out and set its dimension */
+.card-image iframe, .card-image .wb-twitter {
+    margin-top: -45px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+	border: none;
+	overflow: hidden;
+}
 /*******************************************************************************/
 /*********************************** Match Overview ****************************/
 /*******************************************************************************/
@@ -220,6 +228,11 @@ ul.socialList, li{
 .fa-instagram {
 	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
 	color: white;
+}
+.fa-instagram-text {
+	background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent; 
 }
 /* Color Code for Facebook */
 .fa-facebook {
