@@ -4,8 +4,11 @@
 var t = [
 ["canberraShot1.jpg", "images/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"], 
 ["canberraShot2.jpg", "images/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"], 
+["mysiteIndex.png", "images/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["mysiteLeagueTable.png", "images/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
 ["myPhoto.jpg", "images/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"], 
 ["Premier_League-Logo.png", "images/", "Graphic", "https://www.logo.wine/logo/Premier_League", "Resized to fit the frame in the site"], 
+["PL-Lion.png", "images/", "Graphic", "https://resources.premierleague.com/premierleague/photo/2018/12/14/aface409-82b3-45c3-a20e-1aa1ea9d583d/PL-Lion.png", "Resized to fit the frame in the site"], 
 ["League Table", "", "Sports Statistics", "https://www.premierleague.com/tables?co=1&se=274&ha=-1", "Nothing, the data remains the same"], 
 ["target_audience.jpg", "images/", "Graphic", "https://www.mindinventory.com/blog/how-to-identify-target-audiences-for-mobile-app/", "Resized to fit the frame in the site"], 
 ["website_functionality.png", "images/", "Graphic", "https://aishtycoons.com/website-functionality/", "Resized to fit the frame in the site"], 
@@ -48,7 +51,21 @@ var t = [
 ["image-5.jpg", "images/photos/", "Graphic", "https://resources.premierleague.com/photos/premierleague/photo/2021/03/21/994e07ee-6179-43e1-88fa-d7e604bbfaea/1308280356.jpg?width=1350&height=759", "Using the original Sized Image, but with varing dimensions"],
 ["image-6.jpg", "images/photos/", "Graphic", "https://resources.premierleague.com/photos/2021/03/15/73dced0b-d9a3-4b8e-9115-4f833b11be2e/1307059559.jpg?width=1350&height=759", "Using the original Sized Image, but with varing dimensions"],
 ["image-7.jpg", "images/photos/", "Graphic", "https://resources.premierleague.com/photos/premierleague/photo/2021/03/07/4fa3cb74-d8b9-4042-94d0-eceb858aef55/1305822178.jpg?width=1350&height=759", "Using the original Sized Image, but with varing dimensions"],
-["image-8.jpg", "images/photos/", "Graphic", "https://resources.premierleague.com/photos/premierleague/photo/2021/02/28/92a23c5a-24e2-440a-b0eb-0ab0a019541f/1304562362.jpg?width=1350&height=759", "Using the original Sized Image, but with varing dimensions"]
+["image-8.jpg", "images/photos/", "Graphic", "https://resources.premierleague.com/photos/premierleague/photo/2021/02/28/92a23c5a-24e2-440a-b0eb-0ab0a019541f/1304562362.jpg?width=1350&height=759", "Using the original Sized Image, but with varing dimensions"],
+["validationAboutMe.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["validationCSS.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["validationFeedback.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["validationIndex.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["validationMissionStatement.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["validationPhotos.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["validationPrint.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["validationReflection.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["validationShop.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["validationSitemap.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["validationSocialMedia.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["validationSourceLog.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["validationTable.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"],
+["validationValidation.png", "images/validation/", "Graphic", "SelfOwned", "Resized to fit the frame in the site"]
 ];
 /*******************************************************************************/
 /************************* Table Generation from Data **************************/
@@ -70,7 +87,11 @@ function getSourceLog(t) {
 		content += '<td class="col-lg-1">' + (i + 1) + '</td>';
 		content += '<td class="col-lg-2"><a href="' + (t[i][1] + t[i][0]) + '">' + t[i][0] + '</a></td>';
 		content += '<td class="col-lg-2">' + t[i][2] + '</td>';
-		content += '<td class="col-lg-5"><a href="' + t[i][3] + '">' + t[i][3] + '</a></td>';
+		if (t[i][3] === "SelfOwned") {
+			content += '<td class="col-lg-5">' + t[i][3] + '</td>';
+		} else {
+			content += '<td class="col-lg-5"><a href="' + t[i][3] + '">' + t[i][3] + '</a></td>';
+		}
 		content += '<td class="col-lg-2">' + t[i][4] + '</td>';
 		content += '</tr>';
 	}
